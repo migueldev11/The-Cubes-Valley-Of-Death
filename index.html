@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover" />
+  <title>The Cubes: In Valley of Death</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>The Cubes</h1>
+    <h2>In Valley of Death</h2>
+  </header>
+
+  <main>
+    <!-- Tela de escolha de classe -->
+    <section id="telaClasse" class="card center">
+      <h3>Escolha sua classe</h3>
+      <div class="classeBtns">
+        <button class="big" data-classe="Guerreiro">⚔️ Guerreiro</button>
+        <button class="big" data-classe="Mago">🪄 Mago</button>
+        <button class="big" data-classe="Arqueiro">🏹 Arqueiro</button>
+      </div>
+      <p class="nota">Melhore o jogo depois subindo de níveis e adicionando itens!</p>
+    </section>
+
+    <!-- Tela do jogo -->
+    <section id="telaJogo" class="hidden">
+      <div id="hud" class="card">
+        <div id="info">
+          <div id="nomeClasse">—</div>
+          <div id="vidas">HP: —</div>
+          <div id="mana">Mana: —</div>
+        </div>
+        <div id="acoesRapidas">
+          <button id="btnAtacar">⚔️</button>
+          <button id="btnHabilidade">✨</button>
+          <button id="btnItem">🧪</button>
+        </div>
+      </div>
+
+      <div id="campo" class="card">
+        <pre id="mapa" class="mapa" aria-label="Mapa do jogo"></pre>
+      </div>
+
+      <div id="painelInferior" class="card">
+        <div id="log" class="log"></div>
+
+        <div id="controlesTouch" class="controles">
+          <div class="linha">
+            <button class="mov" data-dx="0" data-dy="-1">⬆️</button>
+          </div>
+          <div class="linha">
+            <button class="mov" data-dx="-1" data-dy="0">⬅️</button>
+            <button class="mov" data-dx="0" data-dy="1">⬇️</button>
+            <button class="mov" data-dx="1" data-dy="0">➡️</button>
+          </div>
+        </div>
+
+        <div id="barraAcoesMobile" class="barraAcoes">
+          <button id="btnPassar">⏳ Passar</button>
+          <button id="btnSalvar">💾 Salvar</button>
+          <button id="btnReiniciar">🔁 Reiniciar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Versão Mobile — The Cubes: In Valley of Death</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
